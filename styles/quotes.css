@@ -1,0 +1,38 @@
+.quotes {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.quote-text {
+    text-align: center;
+}
+
+.quote-text, .quote-author {
+    font-size: 17px;
+}
+
+.reload-quote-icon {
+    width: 25px;
+}
+
+.reload-quote-icon:hover {
+    cursor: pointer;
+}
+
+.reload-quote-icon:active {
+    transform: scale(105%);
+}
+
+@media (max-width: 500px) {
+    .quotes {
+        height: 120px;
+    }
+
+    .quote-text, .quote-author {
+        font-size: 15px;
+    }
+}
