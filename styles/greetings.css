@@ -1,0 +1,50 @@
+.greetings {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    justify-content: space-around;
+}
+
+.time, .date, .welcome {
+    text-align: center;
+    color: white;
+}
+
+.time {
+    font-size: 100px;
+}
+
+.date {
+    font-size: 24px;
+}
+
+.welcome {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.userName-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    max-width: 30%;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+@media (max-width: 550px) {
+    .greetings {
+        min-height: 200px;
+    }
+
+    .time {
+        font-size: 50px;
+    }
+
+    .welcome,.userName-input {
+        font-size: 18px;
+    }
+}

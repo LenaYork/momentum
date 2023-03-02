@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>momentum</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/greetings.css">
     <link rel="stylesheet" href="./styles/quotes.css">
 </head>
 <body>
@@ -13,7 +14,16 @@
         <main>
             <div class="slider-controls"></div>
             <div class="section-and-weather"></div>
-            <div class="greetings"></div>
+
+            <div class="greetings">
+                <time class="time"></time>
+                    <date class="date"></date>
+                    <div class="welcome">
+                        <p class="welcome-text">Welcome</p>
+                        <input class="userName-input" placeholder="[Enter name]">
+                    </div>
+            </div>
+
             <div class="quotes">
                 <img src="./assets/reload.svg" alt="get random quote" class="reload-quote-icon">
                 <p class="quote-text" id="quote-text"></p>
@@ -21,7 +31,8 @@
             </div>
         </main>
     </div>
-    
+
+    <script src="./scripts/greetings.js"></script>
     <script src="./scripts/quotes.js"></script>
 </body>
 </html>
