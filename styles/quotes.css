@@ -34,5 +34,6 @@
 
     .quote-text, .quote-author {
         font-size: 15px;
+        margin: 0 10px;
     }
 }
