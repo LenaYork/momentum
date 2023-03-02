@@ -1,4 +1,4 @@
-main {background-color: blue;}
+/* main {background-color: blue;} */
 
 body, h1, h2, h3, p {
     margin: 0;
@@ -10,10 +10,10 @@ p, li, a, h1, h2, h3, time, date, .welcome, input {
     color: white;
 }
 
-/* body {
+body {
     transition: background-image 1s ease-in-out;
     background-size: 100%;
-} */
+}
 
 a {
     text-decoration: none;
