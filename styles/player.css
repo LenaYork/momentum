@@ -1,0 +1,65 @@
+.music-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-icon {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    opacity: .8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.player-icon:hover {
+    opacity: 1;
+}
+
+.prev-song {
+    background-image: url("../assets/player-icons/prev-song.svg");
+}
+
+.play-song {
+    background-image: url("../assets/player-icons/play-song.svg");
+}
+
+.pause-song {
+    background-image: url("../assets/player-icons/pause-song.svg");
+}
+
+.next-song {
+    background-image: url("../assets/player-icons/next-song.svg");
+}
+
+.player-icon:active {
+    transform: scale(105%);
+}
+
+.songs-list {
+    list-style: none;
+    color: white;
+}
+
+.active-track {
+    color: #cbfaf5;
+    transform: scale(105%);
+    transition: 1s;
+}
+
+@media (max-width: 500px) {
+    .songs-list li {
+        font-size: smaller;
+    } 
+}

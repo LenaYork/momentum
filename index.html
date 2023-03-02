@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>momentum</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/player.css">
     <link rel="stylesheet" href="./styles/greetings.css">
     <link rel="stylesheet" href="./styles/quotes.css">
 </head>
 <body>
     <div class="container">
-        <main>
+        <main><section class="player">
+            <div class="music-controls">
+                <div class="player-icon prev-song"></div>
+                <div class="player-icon play-song control-button"></div>
+                <div class="player-icon next-song"></div>
+            </div>
+
+            <ul class="songs-list">
+                <li id="song0" class="song-title">➾ Morning by Edvard Grieg</li>
+                <li id="song1" class="song-title">➾ A Little Night Music by W.A.Mozart</li>
+                <li id="song2" class="song-title">➾ Swan Lake by P.I.Tchaikovsky</li>
+                <li id="song3" class="song-title">➾ Spring by Vivaldi</li>
+            </ul> 
+            
+        </section>
             <div class="slider-controls"></div>
-            <div class="section-and-weather"></div>
+            <div class="player-and-weather">
+                
+            </div>
 
             <div class="greetings">
                 <time class="time"></time>
@@ -32,6 +49,7 @@
         </main>
     </div>
 
+    <script src="./scripts/player.js"></script>
     <script src="./scripts/greetings.js"></script>
     <script src="./scripts/quotes.js"></script>
 </body>
