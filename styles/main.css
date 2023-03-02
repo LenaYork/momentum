@@ -29,7 +29,7 @@ a:hover {
     height: 100vh;
 }
 
-.border-container {
+main {
     max-width: 1400px;
     height: 100%;
     margin: 0 auto;

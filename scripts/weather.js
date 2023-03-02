@@ -33,11 +33,11 @@ function showWeather() {
         clearWeatherContainer();
         
         const weatherDescription = arr.data[0].weather.description; 
-        const temp =  Math.round(arr.data[0].temp); //emperature (default Celsius).
+        const temp =  Math.round(arr.data[0].temp); //temperature (default Celsius).
         const wind = arr.data[0].wind_cdir_full + " " + Math.round(arr.data[0].wind_spd); //Wind speed (Default m/s).
         const weatherIcon = `./assets/weatherIcons/${arr.data[0].weather.icon}.png`;
         const humidity = Math.round(arr.data[0].rh) // relative humidity % 
-
+        
         const weatherIconTag = document.createElement("img");
         weatherIconTag.setAttribute("class", "weather-icon");
         weatherIconTag.setAttribute("alt", "weatherDescription");
@@ -51,7 +51,12 @@ function showWeather() {
         const humidityTag = document.createElement("p");
         humidityTag.setAttribute("class", "humidity");
 
-        weatherContainer.append(weatherIconTag, tempTag, weatherDescriptionTag, windTag, humidityTag);
+        const iconsContainer = document.createElement("div");
+        iconsContainer.setAttribute("class", "icons-container");
+        weatherContainer.append(iconsContainer);
+        iconsContainer.append(tempTag, weatherIconTag);
+
+        weatherContainer.append(weatherDescriptionTag, windTag, humidityTag);
         weatherDescriptionTag.innerHTML = weatherDescription;
         tempTag.innerHTML = temp + " °C" ; 
         windTag.innerHTML = "Wind: " + wind + " m/s";
