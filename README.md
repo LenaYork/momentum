@@ -1,6 +1,8 @@
 # momentum
 An app inspired by the Google Chrome web application Momentum
 
+Deploy: https://lenayork.github.io/momentum/
+
 * audio player: 4 classic melodies to enjoy. You can play/pause them and choose the next/the previous one.
 * weather API: type in  a city name and check the forecast. 
 * time, day and date. All according to YOUR timezone
