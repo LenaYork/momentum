@@ -9,5 +9,6 @@ Deploy: https://lenayork.github.io/momentum/
 * greetings. You can introduce yourself. The nickname will remain after page reload
 * quote of the day. Random quotes for your inspiration. Click the reload button  or reload the page to get another random quote.
 * Background pics: generated according to the time of the day. You can slide them (20 pics for each time of the day)
+* fullscreen mode
 
 If the weather forecast doesn't work at all, the free weather API used here might have changed their policy!
