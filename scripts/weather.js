@@ -8,7 +8,7 @@ const APIKey = "ac1d77b4f3dd4eacb770a6830a8abd60";
 
 showWeather();
 
-cityInput.addEventListener("change", (event) => {
+cityInput.addEventListener("change", () => {
         cityName = cityInput.value;
         if (cityInput.value != "") {
             localStorage.setItem("cityName", cityName);
