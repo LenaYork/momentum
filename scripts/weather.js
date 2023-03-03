@@ -8,8 +8,7 @@ const APIKey = "ac1d77b4f3dd4eacb770a6830a8abd60";
 
 showWeather();
 
-cityInput.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
+cityInput.addEventListener("change", (event) => {
         cityName = cityInput.value;
         if (cityInput.value != "") {
             localStorage.setItem("cityName", cityName);
@@ -19,7 +18,6 @@ cityInput.addEventListener("keypress", (event) => {
             clearWeatherContainer();
             errorTag.innerHTML = "Oops! City name input cannot be empty or something went wrong. Please try again later";
         }
-    }
 })
 
 function showWeather() {
