@@ -12,6 +12,8 @@ function getRandomQuote() {
         .then(arr =>  {
             let randomItem = Math.ceil(Math.random() * arr.length-1 ); 
             textArea.innerHTML = `"${arr[randomItem].text}"`;
-            authorArea.innerHTML = arr[randomItem].author || "unknown";
+            authorArea.innerHTML = (arr[randomItem].author === "type.fit") 
+                ? "unknown" 
+                : arr[randomItem].author.replace(", type.fit", "");
         })
 }
