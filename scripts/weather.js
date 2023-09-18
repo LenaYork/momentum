@@ -64,7 +64,7 @@ function showWeather() {
     .catch((error) => {
         clearWeatherContainer();
         errorTag.innerHTML = "Oops! Unknown city or something went wrong. Please try again later"
-        console.log("error!", error);
+        console.log("Probably API has expired or updated their policy!", error);
         localStorage.setItem("cityName", "London");
     })
 }
